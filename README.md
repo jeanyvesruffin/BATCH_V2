@@ -44,4 +44,7 @@ Pour enfin, ecrire en base de donnees ou declencher d'autre job.
 * Peut avoir un impact sur le traitement en temps reel car tres gourmand en ressources systeme.
 * Exagere pour des calculs plus simples
 
+# Initialisation du projet
+
+
 
