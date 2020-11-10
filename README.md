@@ -68,3 +68,6 @@ git branch -M main
 git remote add origin https://github.com/jeanyvesruffin/BATCH_V2.git
 git push -u origin main
 ```
+
+# Creation du projet Maven
+
