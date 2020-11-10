@@ -46,5 +46,25 @@ Pour enfin, ecrire en base de donnees ou declencher d'autre job.
 
 # Initialisation du projet
 
+1. Creation d'un projet Maven
 
+2. Ajout d'un fichier Readme et gitignore
 
+3. Initialisation depot git
+
+```cmd
+cd [projet]
+git init
+git add .
+git commit -am "init projet"
+```
+
+4. Creation d'un repository dans github
+
+5. Faire le lien entre le repository local et Github
+
+```cmd
+git branch -M main
+git remote add origin https://github.com/jeanyvesruffin/BATCH_V2.git
+git push -u origin main
+```
