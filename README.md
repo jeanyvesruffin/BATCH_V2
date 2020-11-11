@@ -69,7 +69,30 @@ git remote add origin https://github.com/jeanyvesruffin/BATCH_V2.git
 git push -u origin main
 ```
 
-# Creation du projet Maven, pom.XML
+# Creation du projet Maven, pom.XML et choix des dependences utilisees
+
+Nous utiliserons les dependences suivantes dans notre projet:
+* **Jackson**: permettent de propose plusieurs approches pour travailler avec JSON, y compris l'utilisation d'annotations de liaison sur les classes POJO pour des cas d'utilisation simples.
+* **Hibernate**: est un framework open source gerant la persistance des objets en base de donnees relationnelle.
+* **Spring**: framework java.
+* **HikariCP**: est un pool de connexions est un cache des connexions de base de donnees, maintenu afin que les connexions puissent etre reutilisees lorsque de futures demandes a la base de donnees sont requises
+* **Commons-lang3**: fournit une foule d'utilitaires d'aide pour l'API java.lang, notamment les methodes de manipulation de chaines, les methodes numeriques de base, la reflexion d'objets, la concurrence, la creation et la serialisation et les proprietes systeme. En outre, il contient des ameliorations de base de java.util.Date et une serie d'utilitaires dedies a l'aide a la creation	de methodes, telles que hashCode, toString et equals.
+* **Commons-io**: est une bibliotheque d'utilitaires pour aider au developpement de la fonctionnalite IO.
+* **Javax.transaction-api**: L'API de transaction Java (JTA) specifie les interfaces Java standard entre un gestionnaire de transactions et les parties impliquees dans un systeme de transaction distribue: le gestionnaire de ressources, le serveur d'applications et les applications transactionnelles.
+* **Liquibase**: est une solution open-source de gestion des changements de schema de base de donnees qui vous permet de gerer facilement les revisions de vos changements de base de donnees.
+* **Assertj**: est une bibliotheque java fournissant un riche ensemble d'assertions, des messages d'erreur vraiment utiles, ameliore la lisibilite du code de test et est conçue pour etre tres facile a utiliser dans votre IDE prefere.
+* **Junit-jupiter-api**: Contrairement aux versions precedentes de JUnit, JUnit 5 est compose de plusieurs modules differents issus de trois sous-projets differents.JUnit 5 = Plateforme JUnit + JUnit Jupiter + JUnit Vintage
+* **Mockito**: permet la realisation de tests unitaire a l'aide de mock (objet simule)
+* **hamcrest**: permet la realisation de tests unitaire a l'aide de matcher. C'est une bibliotheque de correspondance, qui peut etre combinee pour creer des expressions d'intention flexibles dans les tests.
+
+Avec les versions suivantes:
+
+	<properties>
+		<jackson.version>2.12.0-rc1</jackson.version>
+		<hibernate.version>6.0.0.Alpha6</hibernate.version>
+		<hibernate.type>pom</hibernate.type>
+		<spring.version>2.3.5.RELEASE</spring.version>
+	</properties>
 
 
 # Tricks et TIPS
@@ -97,6 +120,6 @@ Solve:
 mvn dependency:tree
 ```
 
-Plan B qui fonctionne
+Plan B qui fonctionne car le problemee viens de l'IDE
 
 https://stackoverflow.com/questions/63755390/multiple-slf4j-bindings-with-m2e-in-eclipse-2020-06?noredirect=1#comment112749280_63755390

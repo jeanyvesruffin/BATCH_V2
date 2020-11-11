@@ -13,6 +13,7 @@
 		<hibernate.type>pom</hibernate.type>
 		<spring.version>2.3.5.RELEASE</spring.version>
 	</properties>
+	
 	<dependencies>
 		<!-- Les dependences fasterXML permettent de propose plusieurs approches 
 			pour travailler avec JSON, y compris l'utilisation d'annotations de liaison 
@@ -77,7 +78,7 @@
 			<version>7.0.0.Alpha6</version>
 		</dependency>
 		<!-- HikariCP est un pool de connexions est un cache des connexions de 
-			base de donnees maintenu afin que les connexions puissent etre reutilisees 
+			base de donnees, maintenu afin que les connexions puissent etre reutilisees 
 			lorsque de futures demandes a la base de donnees sont requises -->
 		<dependency>
 			<groupId>com.zaxxer</groupId>
@@ -162,8 +163,7 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 			<version>${spring.version}</version>
 			<exclusions>
-
-				<exclusion>  <!-- declare the exclusion here -->
+				<exclusion>
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-starter-tomcat</artifactId>
 				</exclusion>
@@ -179,14 +179,13 @@
 			<artifactId>spring-context-support</artifactId>
 			<version>5.3.0</version>
 		</dependency>
-		<!-- Dependences pour la realisation des test unitaires -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<version>${spring.version}</version>
 			<scope>test</scope>
 			<exclusions>
-				<exclusion>  <!-- declare the exclusion here -->
+				<exclusion>
 					<groupId>com.vaadin.external.google</groupId>
 					<artifactId>android-json</artifactId>
 				</exclusion>
