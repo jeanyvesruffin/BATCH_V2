@@ -60,13 +60,13 @@
 		<!-- Hibernate est un framework open source gerant la persistance des objets 
 			en base de donnees relationnelle. -->
 		<dependency>
-			<groupId>org.hibernate</groupId>
+			<groupId>org.hibernate.orm</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>${hibernate.version}</version>
 			<type>${hibernate.type}</type>
 		</dependency>
 		<dependency>
-			<groupId>org.hibernate</groupId>
+			<groupId>org.hibernate.orm</groupId>
 			<artifactId>hibernate-envers</artifactId>
 			<version>${hibernate.version}</version>
 			<type>${hibernate.type}</type>
@@ -162,6 +162,7 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 			<version>${spring.version}</version>
 			<exclusions>
+
 				<exclusion>  <!-- declare the exclusion here -->
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-starter-tomcat</artifactId>
