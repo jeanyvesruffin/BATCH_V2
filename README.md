@@ -94,6 +94,12 @@ Avec les versions suivantes:
 		<spring.version>2.3.5.RELEASE</spring.version>
 	</properties>
 
+# Mise en place du projet
+
+**Context**: Le projet sera une application batch 
+
+![SPRING BATCH](https://spring.io/images/diagram-batch-5001274a87227c34b690542c45ca0c9d.svg)
+
 
 # Tricks et TIPS
 
